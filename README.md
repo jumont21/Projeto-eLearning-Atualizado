@@ -384,7 +384,7 @@ class GestorListaProduto {
 Administrador "1" --|> "*" GestorComentarioOfensivo : Gerencia
 Administrador "1" --|> "*" Relatorio : Gerencia 
 Administrador "1" --|> "*" Busca : Gerencia 
-Vendedor "1" *-- "1" GestorListaProduto : Gerencia Lista 
+Vendedor "1" *-- "1" GestorListaProduto : Gerencia
 
 
 ```
