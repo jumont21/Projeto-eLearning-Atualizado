@@ -388,4 +388,21 @@ Vendedor "1" *-- "1" GestorListaProduto : Gerencia
 
 
 ```
+## Diagrama de Implantação
 
+```mermaid
+
+%% Diagrama de Implantação
+graph TD
+
+%% Nós
+A[client: WindowsPC] -->|HTTPS| C[Application Server]
+B[client: AndroidMobile] -->|HTTPS| C
+
+D[Application Server] -->|TCP/IP| E[DB Server]
+
+%% Artefatos
+C -->|system eLearning| ApplicationServer
+E -->|SQLite DB| Database
+
+```
